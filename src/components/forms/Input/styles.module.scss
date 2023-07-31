@@ -1,0 +1,30 @@
+.inputBox{
+    display: flex;
+    flex-direction: column;
+
+    input{
+        font-family: var(--font-primary);
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--grey-3);
+
+        margin-top: 1rem;
+        padding: 0 1.2rem;
+        height: 2.875rem;
+        background-color: var(--grey-1);
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button{
+            appearance: none;
+        }
+    }
+
+    input:focus {
+        border: 1px solid var(--grey-4);
+    }
+
+    p {
+        margin-top: 5px;
+        color: var(--grey-3);
+    }
+}
