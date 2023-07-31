@@ -1,0 +1,17 @@
+.totalBox{
+    max-width: 22.1875rem ;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1.5625rem;
+
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+
+    & > div:first-child{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 13px;
+    }
+}

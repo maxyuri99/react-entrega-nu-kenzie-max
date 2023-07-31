@@ -1,0 +1,17 @@
+.sectionBox{
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    & > div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    @media (min-width: 780px){
+        flex-direction: row;
+    }
+}
