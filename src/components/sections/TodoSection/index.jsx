@@ -33,7 +33,11 @@ export const TodoSection = () => {
                 <div className={styles.sectionBox}>
                     <div>
                         <TodoForm addValue={addValue} />
-                        <TodoTotal valueTotal={formattedValue} />
+                        {enteredValues.length > 0 ? (
+                            <TodoTotal valueTotal={formattedValue} />
+                        ) : (
+                            <> </>
+                        )}
                     </div>
                     <TodoList valuesList={enteredValues} removeValue={removeValue} />
                 </div>
